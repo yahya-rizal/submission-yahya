@@ -41,7 +41,7 @@ def create_byregisteredHour_df(df):
     byregisteredHour_df = df.groupby("hr").agg({'registered': 'sum'})
     return byregisteredHour_df
 
-hour_df = pd.read_csv("hour.csv")
+hour_df = pd.read_csv("dashboard_bike/hour.csv")
 
 datetime_columns = ["dteday"]
 
